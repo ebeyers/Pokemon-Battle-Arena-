@@ -1,0 +1,33 @@
+<!-- Name: Exit.html
+Description: Exit page layout, contains professor, goodbye message, and text buttons
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Exit Screen</title>
+    <link rel="stylesheet" href="exit.css">
+    <script src="proj3.js" async></script>
+</head>
+<body>
+    <div class="leavingScreen">
+        <img src="professor.png" class="professor">
+        <div class="textButtonContainer">
+            <div class="textInstructions">
+                <h1 class="title">Thank You For Playing</h1>
+                <p>HOPE TO SEE YOU AGAIN !</p>
+            </div>
+            <div class="buttonContainer">
+                <button onclick="back()">Back</button>
+				<button id="terminateGameButton">Start New Game</button>
+            </div>
+        </div>
+    </div>
+	 <script>
+        function back() {
+            window.location.href = "http://localhost/project3/field.html";
+        }
+    </script>
+</body>
+</html>

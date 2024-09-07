@@ -1,0 +1,72 @@
+<!-- Name: instructions.html -->
+<!-- Description: handles the instructions page layout-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon Battle Game!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="instructions.css">
+    <script src="instructions.js"></script>
+</head>
+<body>
+
+    <div id="welcomeScreen" class="welcomeScreen">
+        
+        <div class="textButtonContainer">
+            <h1 class="title">INSTRUCTIONS</h1>
+			
+			<!-- image sources for instructions page -->
+			<div class="images">
+				<img src="professor.png" class="professor">
+				
+				<div class="description_image">
+					<img src="arrow_keys.png" class="arrow_keys">
+					<img src="squirtle_evolution.png" class="squirtle_evolution">
+				</div>
+				
+				<!--text class to display the game instructions-->
+				<div class="textInstructions">
+					<h3>How to Play:</h3>
+					- Use the arrow keys or WASD on your keyboard to move up, down, left, and right <br>
+					- Expand your window to play full screen
+					
+					<h3>Your Team:</h3>
+					- Once you start the game, you will be given a team of four pokemon at random
+					
+					<h3>Home Page:</h3>
+					- On the home page, you will find two houses, a healing house for your pokemon and a trainer with a battle arena <br>
+					- Use the arrow keys to walk around the property <br>
+					- Instructions are located on the page with whether to click on, or walk into the house <br>
+					
+					<h3>Battle:</h3>
+					- Click on the trainer to begin a battle.  <br>
+					- Your opponent will be given a team of four to battle against you <br>
+					- You have two different types of moves: attack and special attack <br>
+					- To check whether your pokemon has a pokemon more evolved than your current one, click Check Evolution <br>
+					- If at any point you need to heal your pokemon, click the "Run" button in the bottom left corner <br>
+					- The battle ends when you or your opponent has made all the pokemon faint <br>
+					
+					<h3>Training and Evolving</h3>
+					- After each opponent faint, your pokemon will gain one experience point <br>
+					- After two experience points, your pokemon will evolve after the game finishes! <br>
+					
+					<h3>Sound:</h3>
+					- If you prefer to play the game with sound, click the Sound ON/OFF button located on the screen <br>
+					
+				</div>
+			</div>
+			
+			<!-- button for playing the opening sound -->
+			<div class="buttonContainer">
+				<button onclick="back()">Back</button>
+				<audio id="openingSound" src="1-03. Professor Oak.mp3"></audio>
+			</div>
+
+
+        </div>
+		
+    </div>
+</body>
+</html>
+

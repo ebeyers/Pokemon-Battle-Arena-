@@ -1,0 +1,40 @@
+<!-- Name: Proj3.html -->
+<!-- Description: Welcome Screen!
+	- Contains the professor and the three button options
+		- Start Game
+		- Instructions
+		- Sound ON/OFF
+	- Used to display the elements on the webpage
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon Battle Game!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="battle.css">
+    <link rel="stylesheet" type="text/css" href="proj3.css">
+    <script src="proj3.js" async></script>
+	<script src="teams.js" async></script>
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="welcomeScreen">
+	
+		<!--Professor Image -->
+        <img src="professor.png" class="professor">
+		
+		<!--Text Button used to display the Welcome text along with the three buttons (Start Game, Instructions, and Sound ON/OFF)-->
+        <div class="textButtonContainer">
+            <h1 class="title">Welcome to the Pokémon Battle Game!</h1>
+            <div class="buttonContainer">
+                <button onclick="generateTeam()">Start Game</button>
+                <button onclick="instructions()">Instructions</button>
+                <button onclick="playSound('openingSound')">Sound ON/OFF</button>
+                <audio id="openingSound" src="prof.mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

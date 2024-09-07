@@ -1,0 +1,39 @@
+<!-- Name: teams.html -->
+<!-- Description: handles the layout for the teams page-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Displays the Battle page, uses proj3.js and teams.js -->
+    <title>Pokemon Battle Game!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="teams.css">
+	<script src="proj3.js"></script>
+    <script src="teams.js"></script>
+</head>
+
+<!-- initalize user team -->
+<body onload="initializeTeam()">
+    <div id="welcomeScreen" class="welcomeScreen">
+        <div class="textButtonContainer">
+             <h1 class="title">Here’s your team!</h1>
+			
+			<div id="pokemonTeam" class="images">
+			</div>
+			
+			
+			<!-- button containers for back and next on the teams page-->
+			<div class="buttonContainer">
+				<button onclick="back()">Back</button>
+				<button onclick="next()">Next</button>
+				<audio id="openingSound" src="BattleSound.mp3"></audio>
+			</div>
+        </div>
+    </div>
+	
+	<!-- initalize opponent team -->
+	<script>
+		initializeOpposingTeam();
+	</script>
+</body>
+</html>

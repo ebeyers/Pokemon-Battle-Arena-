@@ -1,0 +1,81 @@
+/* 
+    Name: teams.css
+    Description: Manipulates the visuals for the instructions page
+*/
+/*Styles the background image for the teams page*/
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    /*background-image: url('https://www.freepik.com/free-photos-vectors/pokemon-background);*/
+    background-image: url('team_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	color:white;
+}
+
+.pokemon-team {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.pokemon {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+	margin: 10px;
+}
+
+/* dimensions for pokemon team members */
+.pokemon img {
+    width: 100px;
+    height: 98px;
+}
+
+.pokemon p {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+	text-align: center;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%; 
+}
+
+/* button styling for next and back */
+button {
+    background-color: rgb(4, 45, 4);
+    color: white;
+    padding: 10px 20px;
+    margin: 0; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px; 
+    transition: background-color 0.3s ease;
+	
+}
+
+button:hover {
+    background-color: rgb(4, 45, 4);
+}
+.title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Pokemon Solid';
+    font-size: 40px; 
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    background-color: rgb(4, 45, 4);
+    padding: 10px;
+    width: 100%; 
+}

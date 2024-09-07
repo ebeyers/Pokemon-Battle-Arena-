@@ -1,0 +1,86 @@
+/*
+Name: proj3.css
+Description: Used to style proj3.html
+Contains: Background image, images, buttons, and text
+*/
+
+/*Background and Body Default Style*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    background-image: url('pokemon-stadium-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*White Box containing Professor, Welcome Box, and Buttons*/
+.welcomeScreen {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+    margin: 100px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+/*Professor Image*/
+.professor {
+    height: 400px; 
+    width: auto;
+    background-color: transparent;
+}
+
+/*Allows the buttons and Welcome Text to be displayed in a column*/
+.textButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 400px; 
+}
+
+/*Text Font and Background green box*/
+.title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Pokemon Solid';
+    font-size: 40px; 
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    background-color: lightgreen;
+    padding: 10px;
+    width: 100%; 
+}
+
+/*Container for all three button choices (Start Game, Instructions, and Sound ON/OFF)*/
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%; 
+}
+
+/*Style for all three buttons*/
+button {
+    background-color: rgb(4, 45, 4);
+    color: white;
+    padding: 10px 20px;
+    margin: 0; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px; 
+    transition: background-color 0.3s ease;
+}
+
+/*Allows the color of the button to change when hovered over*/
+button:hover {
+    background-color: rgb(3, 157, 3);
+}
